@@ -26,11 +26,6 @@ function FoodOrder() {
             🍕
           </span>
         </button>
-        <button onClick={() => {}}>
-          <span role="img" aria-label="A taco">
-            🌮
-          </span>
-        </button>
       </div>
       <p>Selected food: {food}</p>
       <button onClick={() => {}}>
