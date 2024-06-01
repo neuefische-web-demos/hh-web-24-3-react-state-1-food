@@ -1,4 +1,4 @@
-import "./styles.css";
+import './styles.css';
 
 export default function App() {
   return (
@@ -10,8 +10,8 @@ export default function App() {
 }
 
 function FoodOrder() {
-  const food = "?";
-  const vegan = true;
+  const food = '?';
+  const isVegan = true;
 
   return (
     <>
@@ -34,8 +34,8 @@ function FoodOrder() {
       </div>
       <p>Selected food: {food}</p>
       <button onClick={() => {}}>
-        Make it vegan:{" "}
-        {vegan ? (
+        Make it vegan:{' '}
+        {isVegan ? (
           <span role="img" aria-label="Thumbs up">
             👍
           </span>
