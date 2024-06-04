@@ -1,4 +1,5 @@
 import './styles.css';
+import { useState } from 'react';
 
 export default function App() {
   return (
@@ -10,26 +11,35 @@ export default function App() {
 }
 
 function FoodOrder() {
-  const food = '?';
-  const isVegan = true;
+  const [food, setFood] = useState('?');
+  const [isVegan, setIsVegan] = useState(true);
 
   return (
     <>
       <div>
-        <button onClick={() => {}}>
+        <button
+          onClick={() => {
+            setFood(' 🍔');
+          }}>
           <span role="img" aria-label="A hamburger">
             🍔
           </span>
         </button>
-        <button onClick={() => {}}>
+        <button
+          onClick={() => {
+            setFood(' 🍕');
+          }}>
           <span role="img" aria-label="A pizza">
             🍕
           </span>
         </button>
       </div>
       <p>Selected food: {food}</p>
-      <button onClick={() => {}}>
-        Make it vegan:{' '}
+      <button
+        onClick={() => {
+          setIsVegan(!isVegan);
+        }}>
+        Make it vegan:
         {isVegan ? (
           <span role="img" aria-label="Thumbs up">
             👍
